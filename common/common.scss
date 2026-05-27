@@ -69,6 +69,18 @@
 }
 
 .d-header {
+  --primary-low: var(--secondary);
+  --category-badge-title-color: white;
+
+  .extra-info-wrapper {
+    --tag-text-color: var(--secondary);
+    --d-link-color: var(--secondary);
+  }
+
+  a.topic-featured-link {
+    color: var(--secondary);
+  }
+
   background: var(--header_background);
   border-bottom: 1px solid var(--primary);
   box-shadow: none;
@@ -94,37 +106,14 @@
 }
 
 #main-outlet-wrapper #main-outlet {
-  max-width: 900px;
+  max-width: 920px;
   margin-left: auto;
   margin-right: auto;
-}
-
-#main-outlet,
-.container,
-.wrap {
-  font-family: var(--font-family);
-}
-
-.topic-list,
-.latest-topic-list,
-.category-list,
-.directory table {
-  background: transparent;
-  border-collapse: collapse;
-  box-shadow: none;
 }
 
 .topic-list .main-link a.title:visited,
 .latest-topic-list-item.visited .main-link a.title {
   color: var(--primary-high);
-}
-
-.topic-list-item:hover,
-.topic-list tbody tr:hover,
-.category-list tbody tr:hover,
-.latest-topic-list-item:hover,
-.directory table tr:hover {
-  background: var(--d-hover);
 }
 
 .btn,
@@ -169,24 +158,8 @@ textarea:focus,
   box-shadow: none !important;
 }
 
-.search-menu .search-input input:focus,
-.search-menu .search-input .search-term__input:focus {
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-.list-controls,
-.navigation-container,
-.user-content,
-.archetype-regular #main-outlet > .regular,
-.search-container,
-.groups-header,
-.users-directory,
-.container .user-main,
-.contents.body-page {
-  background: transparent;
-  border-radius: 0;
-  box-shadow: none;
+.menu-panel {
+  --shadow-dropdown: none;
 }
 
 .topic-body,
@@ -195,32 +168,10 @@ textarea:focus,
   --content-border-color: var(--table-border-color);
 }
 
-.user-card .card-content,
-.group-card .card-content,
-.d-modal__container,
-.fk-d-menu__inner-content,
-.select-kit.is-expanded .select-kit-body,
-#reply-control {
-  background: var(--secondary);
-  border-radius: 0;
-  box-shadow: none;
-}
-
-#reply-control .d-editor-container,
-.d-editor-container {
-  border-radius: 0;
-}
-
 blockquote,
 .cooked aside.quote .title {
   border-color: var(--quaternary);
   background: color-mix(in srgb, var(--secondary) 88%, white);
-}
-
-@media (width >= 768px) {
-  #main-outlet {
-    max-width: 1180px;
-  }
 }
 
 .nested-view__floating-actions {
@@ -228,12 +179,8 @@ blockquote,
   padding: 10px;
 }
 
-.d-header {
-  --primary-low: var(--secondary);
-}
-
 .topic-list .link-bottom-line,
-.topic-list td.topic-list-data.posters {
+.topic-list .posters {
   display: none;
 }
 
