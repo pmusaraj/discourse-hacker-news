@@ -12,19 +12,20 @@
   --d-input-border-radius: 0;
   --d-nav-pill-border-radius: 0;
 
-  --content-border-color: color-mix(in srgb, var(--quaternary) 28%, transparent);
+  --content-border-color: color-mix(
+    in srgb,
+    var(--quaternary) 28%,
+    transparent
+  );
   --table-border-color: color-mix(in srgb, var(--quaternary) 22%, transparent);
   --metadata-color: var(--quaternary);
   --title-color: var(--primary);
   --title-color--read: var(--primary-medium);
   --excerpt-color: var(--primary-high);
   --d-link-color: var(--primary);
-  --d-hover: var(--hover);
   --d-selected: var(--selected);
   --d-selected-text-color: var(--primary);
 
-  --d-sidebar-section-border-color: transparent;
-  --d-sidebar-border-color: color-mix(in srgb, var(--quaternary) 25%, transparent);
   --d-sidebar-highlight-background: var(--hover);
   --d-sidebar-active-background: var(--selected);
   --d-sidebar-active-color: var(--primary);
@@ -36,15 +37,19 @@
   --d-input-border: 1px solid var(--input-border-color);
 
   --d-button-default-bg-color: transparent;
-  --d-button-default-bg-color--hover: var(--hover);
+  --d-button-default-bg-color--hover: var(--d-hover);
   --d-button-default-text-color: var(--primary);
   --d-button-default-text-color--hover: var(--primary);
   --d-button-default-icon-color: var(--primary);
   --d-button-default-icon-color--hover: var(--primary);
-  --d-button-default-border: 1px solid var(--quaternary);
-  --d-button-default-border--hover: 1px solid var(--primary);
+  --d-button-default-border: 1px solid var(--primary-medium);
+  --d-button-default-border--hover: 1px solid var(--primary-high);
   --d-button-primary-bg-color: var(--tertiary);
-  --d-button-primary-bg-color--hover: color-mix(in srgb, var(--tertiary) 82%, black);
+  --d-button-primary-bg-color--hover: color-mix(
+    in srgb,
+    var(--tertiary) 82%,
+    black
+  );
   --d-button-primary-text-color: var(--primary);
   --d-button-primary-text-color--hover: var(--primary);
   --d-button-primary-icon-color: var(--primary);
@@ -58,6 +63,9 @@
   --topic-list-item-background-color: transparent;
   --topic-list-item-background-color--visited: transparent;
   --d-topic-list-header-background-color: var(--secondary);
+
+  --d-post-control-text-color: var(--primary-medium);
+  --d-post-control-background--hover: var(--d-hover);
 }
 
 html,
@@ -98,13 +106,8 @@ h6,
 }
 
 .sidebar-wrapper {
-  background: var(--secondary);
-  border-right: 1px solid var(--d-sidebar-border-color);
+  background: transparent;
   box-shadow: none;
-}
-
-.sidebar-wrapper .sidebar-container {
-  border-right: 0;
 }
 
 .sidebar-section-link-wrapper .sidebar-section-link,
@@ -219,7 +222,7 @@ button {
 
 .btn-primary,
 .btn.btn-primary {
-  border: 1px solid var(--primary);
+  border: 1px solid var(--primary-high);
   font-weight: 700;
 }
 
@@ -285,4 +288,13 @@ blockquote,
   #main-outlet {
     max-width: 1180px;
   }
+}
+
+.nested-view__floating-actions {
+  background-color: var(--secondary);
+  padding: 10px;
+}
+
+.d-header {
+  --primary-low: var(--secondary);
 }
