@@ -196,3 +196,9 @@ blockquote,
 .discourse-reactions-picker-container {
   border: 1px solid var(--primary-low);
 }
+
+.names > span a,
+.names span.first.new-user:not(.staff) a {
+  color: var(--primary-medium);
+  --d-link-text-decoration: none;
+}
