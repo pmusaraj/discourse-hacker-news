@@ -23,7 +23,7 @@
   --title-color--read: var(--primary-medium);
   --excerpt-color: var(--primary-high);
   --d-link-color: var(--primary);
-  --d-link-text-decoration: underline;
+  --d-link-text-decoration: none;
   --d-selected: var(--selected);
   --d-selected-text-color: var(--primary);
 
@@ -107,6 +107,7 @@
 }
 
 #main-outlet-wrapper #main-outlet {
+  --d-link-text-decoration: underline;
   max-width: 920px;
   margin-left: auto;
   margin-right: auto;
