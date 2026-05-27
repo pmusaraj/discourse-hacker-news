@@ -50,10 +50,10 @@
     var(--tertiary) 82%,
     black
   );
-  --d-button-primary-text-color: var(--primary);
-  --d-button-primary-text-color--hover: var(--primary);
-  --d-button-primary-icon-color: var(--primary);
-  --d-button-primary-icon-color--hover: var(--primary);
+  --d-button-primary-text-color: var(--header_primary);
+  --d-button-primary-text-color--hover: var(--header_primary);
+  --d-button-primary-icon-color: var(--header_primary);
+  --d-button-primary-icon-color--hover: var(--header_primary);
 
   --shadow-header: none;
   --shadow-card: none;

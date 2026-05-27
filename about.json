@@ -22,6 +22,20 @@
       "danger": "CC3300",
       "success": "228B22",
       "love": "CC3300"
+    },
+    "hacker-news-dark": {
+      "primary": "F6F6EF",
+      "secondary": "161616",
+      "tertiary": "FF6600",
+      "quaternary": "A0A0A0",
+      "header_background": "FF6600",
+      "header_primary": "000000",
+      "highlight": "4A2B14",
+      "selected": "3A2A1F",
+      "hover": "242424",
+      "danger": "FF6A3D",
+      "success": "6BCB6B",
+      "love": "FF6A3D"
     }
   },
   "modifiers": {
