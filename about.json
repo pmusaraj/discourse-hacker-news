@@ -1,0 +1,37 @@
+{
+  "name": "Hacker News",
+  "component": false,
+  "authors": "Penar Musaraj",
+  "about_url": null,
+  "license_url": null,
+  "theme_version": "0.1.0",
+  "minimum_discourse_version": null,
+  "maximum_discourse_version": null,
+  "assets": {},
+  "color_schemes": {
+    "hacker-news-light": {
+      "primary": "000000",
+      "secondary": "F6F6EF",
+      "tertiary": "FF6600",
+      "quaternary": "828282",
+      "header_background": "FF6600",
+      "header_primary": "000000",
+      "highlight": "FFE4CC",
+      "selected": "FFDBC2",
+      "hover": "F0E8D8",
+      "danger": "CC3300",
+      "success": "228B22",
+      "love": "CC3300"
+    }
+  },
+  "modifiers": {
+    "only_theme_color_schemes": true
+  },
+  "theme_site_settings": {
+    "enable_welcome_banner": false,
+    "search_experience": "search_icon"
+  },
+  "screenshots": [
+    "screenshots/light.png"
+  ]
+}
