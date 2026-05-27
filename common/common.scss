@@ -26,7 +26,6 @@
   --d-selected: var(--selected);
   --d-selected-text-color: var(--primary);
 
-  --d-sidebar-highlight-background: var(--hover);
   --d-sidebar-active-background: var(--selected);
   --d-sidebar-active-color: var(--primary);
   --d-sidebar-link-icon-color: var(--quaternary);
@@ -63,33 +62,10 @@
   --topic-list-item-background-color: transparent;
   --topic-list-item-background-color--visited: transparent;
   --d-topic-list-header-background-color: var(--secondary);
+  --d-topic-list-data-padding-y: 1px;
 
   --d-post-control-text-color: var(--primary-medium);
   --d-post-control-background--hover: var(--d-hover);
-}
-
-html,
-body {
-  background: var(--secondary);
-}
-
-body {
-  color: var(--primary);
-  font-family: var(--font-family);
-  font-size: var(--base-font-size);
-  line-height: 1.35;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.topic-list .main-link a.title,
-.latest-topic-list-item .main-link a.title {
-  font-family: var(--heading-font-family);
-  font-weight: 400;
 }
 
 .d-header {
@@ -117,6 +93,12 @@ h6,
   border-radius: 0;
 }
 
+#main-outlet-wrapper #main-outlet {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #main-outlet,
 .container,
 .wrap {
@@ -132,51 +114,9 @@ h6,
   box-shadow: none;
 }
 
-.topic-list th,
-.topic-list td,
-.category-list th,
-.category-list td,
-.latest-topic-list-item,
-.directory table th,
-.directory table td {
-  border-color: var(--table-border-color);
-}
-
-.topic-list th,
-.category-list th,
-.directory table th,
-.topic-list .posters,
-.topic-list .num,
-.topic-list .age,
-.topic-list .activity,
-.topic-list .views,
-.topic-list .posts,
-.topic-list .category,
-.topic-list .link-bottom-line,
-.latest-topic-list .topic-stats,
-.topic-meta-data,
-.post-info,
-.small-action,
-.discourse-tags,
-.badge-wrapper,
-.badge-category__name {
-  color: var(--metadata-color);
-  font-size: 0.78rem;
-}
-
-.topic-list .main-link a.title,
-.latest-topic-list-item .main-link a.title,
-.category-list .category-name,
-.topic-title h1 a,
-.fancy-title {
-  color: var(--primary);
-  font-size: 1rem;
-  line-height: 1.35;
-}
-
 .topic-list .main-link a.title:visited,
 .latest-topic-list-item.visited .main-link a.title {
-  color: var(--primary-medium);
+  color: var(--primary-high);
 }
 
 .topic-list-item:hover,
@@ -184,14 +124,7 @@ h6,
 .category-list tbody tr:hover,
 .latest-topic-list-item:hover,
 .directory table tr:hover {
-  background: var(--hover);
-}
-
-.discourse-tag,
-.discourse-tag.box,
-.badge-category,
-.badge-wrapper.bullet span.badge-category-bg {
-  border-radius: 0;
+  background: var(--d-hover);
 }
 
 .btn,
@@ -297,4 +230,13 @@ blockquote,
 
 .d-header {
   --primary-low: var(--secondary);
+}
+
+.topic-list .link-bottom-line,
+.topic-list td.topic-list-data.posters {
+  display: none;
+}
+
+.d-header-icons .icon img.avatar {
+  border: 1px solid var(--secondary);
 }
