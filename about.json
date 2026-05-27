@@ -38,14 +38,9 @@
       "love": "FF6A3D"
     }
   },
-  "modifiers": {
-    "only_theme_color_schemes": true
-  },
   "theme_site_settings": {
     "enable_welcome_banner": false,
     "search_experience": "search_icon"
   },
-  "screenshots": [
-    "screenshots/light.png"
-  ]
+  "screenshots": ["screenshots/light.png"]
 }

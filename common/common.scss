@@ -83,7 +83,7 @@
   }
 
   background: var(--header_background);
-  border-bottom: 1px solid var(--primary);
+  border-bottom: 1px solid var(--content-border-color);
   box-shadow: none;
 
   .title a,
@@ -107,10 +107,14 @@
 }
 
 #main-outlet-wrapper #main-outlet {
-  --d-link-text-decoration: underline;
   max-width: 920px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.topic-post,
+.cooked {
+  --d-link-text-decoration: underline;
 }
 
 .topic-list {
@@ -152,16 +156,6 @@ button {
 .btn.btn-primary {
   border: 1px solid var(--primary-high);
   font-weight: 700;
-}
-
-input:focus,
-textarea:focus,
-.select-kit.combo-box .select-kit-header:focus,
-.select-kit.is-expanded .select-kit-header,
-.d-editor-input:focus {
-  outline: 1px solid var(--tertiary) !important;
-  outline-offset: 1px;
-  box-shadow: none !important;
 }
 
 .menu-panel {
