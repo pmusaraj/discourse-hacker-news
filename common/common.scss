@@ -201,6 +201,11 @@ blockquote,
   display: none;
 }
 
+.topic-list .pinned .topic-list-data {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
 .discourse-reactions-picker-container {
   border: 1px solid var(--primary-low);
 }
