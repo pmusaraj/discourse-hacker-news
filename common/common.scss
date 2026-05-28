@@ -192,7 +192,9 @@ blockquote,
 
 .nested-view__floating-actions {
   background-color: var(--secondary);
-  padding: 10px;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 0 0 6px 0 var(--secondary);
 }
 
 .topic-list .link-bottom-line,
