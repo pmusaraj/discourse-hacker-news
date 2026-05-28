@@ -75,6 +75,10 @@
   );
 }
 
+.admin-area .sidebar-wrapper .admin-panel {
+  --d-sidebar-admin-background: transparent;
+}
+
 .d-header {
   --primary-low: var(--secondary);
   --category-badge-title-color: white;
